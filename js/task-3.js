@@ -11,11 +11,6 @@ inputEl.addEventListener("input", () => {
 }
 })
 
-
-
- 
-
-
 inputEl.style.width = "360px";
 inputEl.style.height = "40px";
 inputEl.style.fontSize = "16px";
@@ -36,10 +31,6 @@ wrapper.style.borderRadius = "8px";
 wrapper.style.backgroundColor = "#FFF";
 wrapper.style.padding = "24px";
 
-
-
-
-
 const output = document.querySelector("h1");
 output.style.fontStyle = "normal";
 output.style.whiteSpace = "nowrap"
@@ -48,6 +39,7 @@ output.style.fontSize =  "24px";
 output.style.fontWeight = "600";
 output.style.lineHeight = "1.33";
 output.style.letterSpacing = "0.96px";
+output.style.marginTop = "16px";
 
 
 document.body.append(wrapper);
