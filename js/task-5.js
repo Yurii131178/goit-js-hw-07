@@ -26,6 +26,7 @@ button.style.fontWeight = "500";
 button.style.lineHeight = "1.5";
 button.style.letterSpacing = "0.64px";
 button.style.borderRadius = "8px";
+button.style.border = "none";
 
 
 const widget = document.querySelector(".widget");
