@@ -37,31 +37,15 @@ galleryEl.style.rowGap = "48px";
 galleryEl.style.columnGap = "24px";
 galleryEl.style.justifyContent = "center";
 galleryEl.style.alignItems = "flex-start";
+galleryEl.style.listStyle = "none"; 
+galleryEl.style.backgroundColor = "#fff";
 
 
-const liEl = document.createElement("li");
-const imgEl = document.createElement("img");
+const markup = images
+  .map(
+    ({ url, alt }) =>
+      `<li><img src="${url}" alt="${alt}" width="360" height="240"></li>`
+  )
+  .join("");
 
-
-imgEl.style.width = "360px";
-
-liEl.append(imgEl);
-
-galleryEl.append(liEl);
-
-galleryEl.insertAdjacentHTML(
-  "beforeend",
-  images
-    .map(
-      ({ url, alt }) =>
-        `<li><img src="${url}" alt="${alt}"></li>`
-    )
-    .join("")
-);
-
-console.log(galleryEl);
-
-
-
-
-
+galleryEl.insertAdjacentHTML("beforeend", markup);
